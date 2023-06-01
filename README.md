@@ -14,4 +14,10 @@ Esse projeto é uma tentativa de criar um algoritmo que registra um rosto atrav�
 - O conteúdo da pasta ImagensTeste é composto por imagens para testar o algoritmo de reconhecimento através do código '.\Reconhecimento\teste_reconhecimento.py'
 
 
-Atualmente estou documentando os códigos para melhor compreensão.
+
+* No momento estou atualizando a documentação dos códigos para melhor compreensão.
+
+
+
+*Para executar o código, precisa das seguintes bibliotecas instaladas:
+    - Opencv, Shutil (operações de arquivo), numpy, Pillow (PIL), os.

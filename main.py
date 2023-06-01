@@ -16,11 +16,11 @@ while sair != True:
 
     opcao = int(input("Insira a opção desejada: "))
 
-    if opcao == 1:
+    if opcao == 1:  #Login
         codigo = int(input("Insira seu código: "))
         reconhece.reconhecimento(codigo)
 
-    elif opcao == 2:
+    elif opcao == 2: #Registro de um novo rosto
         senha = int(input("Insira a senha de adm: "))
         if senha == 1234:
             codigo = controlador.gera_codigo()
