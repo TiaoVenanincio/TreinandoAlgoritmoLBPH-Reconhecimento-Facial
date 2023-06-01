@@ -10,7 +10,6 @@ while sair != True:
     print("1. Login")
     print("2. Registro")
     print("3. Deletar registro")
-    print("4. Verificar ID -- Não implementado")
     print()
     print("5. Sair")
     print()

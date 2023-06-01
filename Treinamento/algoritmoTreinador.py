@@ -51,8 +51,9 @@ def treina_algoritmo(codigo):
     lbph.train(lbph_faces, np.array(lbph_labels))
 
     path = '.\Treinamento\AlgoritmosTreinados\cod' + str(codigo)
+    #cria o diretorio
     os.makedirs(path, exist_ok=True)
     
-    # Salva o classificador treinado em um arquivo
+    # Salva o classificador treinado no diretorio criado acima
     caminho = '.\Treinamento\AlgoritmosTreinados\cod'+ str(codigo)+ '\cod' + str(codigo) + '_treinado.xml'
     lbph.save(caminho)

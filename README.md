@@ -3,7 +3,7 @@ Esse projeto é uma tentativa de criar um algoritmo que registra um rosto atrav�
 
 - O conteúdo da pasta TiraFotos é responsável por tirar uma quantidade de fotos do usuário, a qual pode ser definida no código. Tal quantidade de fotos é utilizada para o treinamento do algoritmo.
 
-- O conteúdo da pasta Treinamento é responsável por treinar um algoritmo para o rosto que está sendo cadastrado. A lógica usada é rotular o rosto do usuário como conhecido (1) e outros rostos da subpasta "FacesTreino" como desconhecidos (0).
+- O conteúdo da pasta Treinamento é responsável por treinar um algoritmo para o rosto que está sendo cadastrado. A lógica usada é rotular o rosto do usuário como conhecido (1) e outros rostos da subpasta "FacesTreino" como desconhecidos (0). Além disso, nessa pasta ficam salvas as fotos usadas para o treinamento de cada código, como também o algoritmo gerado associado a cada código.
 
 - O conteúdo da pasta ControleCodigos é responsável por gerar, armazenar e ordenar os códigos gerados, mantendo-os em ordem crescente.
 
