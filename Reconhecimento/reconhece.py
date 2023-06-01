@@ -6,7 +6,7 @@ def reconhecimento(codigo):
     #abrindo a webcam
     webcam = cv2.VideoCapture(1)
 
-    #preara o haarcascade para só verificar a autenticidade apenas se tiver um rosto
+    #preara o haarcascade para verificar a autenticidade apenas se tiver um rosto
     face_cascade =  cv2.CascadeClassifier('TiraFotos\haarcascade_frontalface_default.xml')
 
     #carrega o algoritmo treinado relacionado ao codigo
@@ -21,6 +21,7 @@ def reconhecimento(codigo):
         if not validacao:
             break
         
+        #prepara a imagem para o LPBH treinado
         imagem_resized = cv2.resize(frame, (640,480)) #frame para trabalhar a deteccao
         imagem_pil = Image.fromarray(imagem_resized).convert('L')
         imagem_np = np.array(imagem_pil, 'uint8')
@@ -35,9 +36,11 @@ def reconhecimento(codigo):
             rosto = 1 #afirma que um rosto foi reconhecido nesse frame
 
         if (rosto == 1) and (limite % 3 == 0):
+        #se reconhecer rosto, faz o reconhecimento a cada 3 frames
             previsao = lbph_face_classifier.predict(imagem_np)
             rotulo, confiabilidade = previsao
 
+            #determina niveis "aceitaveis" de confiabilidade na detecçao
             if(confiabilidade > 85): 
                 rotulo = 0
 
@@ -51,7 +54,7 @@ def reconhecimento(codigo):
         frame_flip = (cv2.flip(frame,1))
         cv2.imshow("Video da Webcam Invertido", frame_flip)
 
-        if cv2.waitKey(5) == 27: ##pressiona esc para sair
+        if cv2.waitKey(5) == 27: #pressiona esc para sair
             break
 
         limite += 1

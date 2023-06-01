@@ -5,7 +5,7 @@ from PIL import Image
 
 codigo = 1
 
-#preara o haarcascade para só verificar a autenticidade apenas se tiver um rosto
+#preara o haarcascade para verificar a autenticidade apenas se tiver um rosto
 face_cascade =  cv2.CascadeClassifier('TiraFotos\haarcascade_frontalface_default.xml')
 
 #carrega o algoritmo treinado relacionado ao codigo
