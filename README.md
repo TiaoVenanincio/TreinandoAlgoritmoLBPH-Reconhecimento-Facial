@@ -11,5 +11,7 @@ Esse projeto é uma tentativa de criar um algoritmo que registra um rosto atrav�
 
 - O conteúdo da pasta Reconhecimento é responsável por buscar o algoritmo do rosto que deseja fazer "Login" através do código fornecido. Em seguida, utiliza-o para verificar se o rosto é conhecido ou desconhecido.
 
+- O conteúdo da pasta ImagensTeste é composto por imagens para testar o algoritmo de reconhecimento através do código '.\Reconhecimento\teste_reconhecimento.py'
+
 
 Atualmente estou documentando os códigos para melhor compreensão.
