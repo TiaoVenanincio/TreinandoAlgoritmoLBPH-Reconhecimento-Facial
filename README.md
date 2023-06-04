@@ -1,5 +1,5 @@
 # TreinandoAlgoritmoLBPH-Reconhecimento-Facial
-Esse projeto é uma tentativa de criar um algoritmo que registra um rosto através da câmera do computador e consegue treinar um algoritmo para diferenciá-lo de outros rostos.
+Esse projeto é uma tentativa de criar um algoritmo que registra um rosto através da câmera do computador e consegue treinar um algoritmo usando LBPH para diferenciá-lo de outros rostos.
 
 - O conteúdo da pasta TiraFotos é responsável por tirar uma quantidade de fotos do usuário, a qual pode ser definida no código. Tal quantidade de fotos é utilizada para o treinamento do algoritmo.
 
