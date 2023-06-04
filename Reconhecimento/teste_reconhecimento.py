@@ -47,7 +47,7 @@ for path in paths:
         print("Não foi possivel detectar um rosto")
         
     frame_flip = (cv2.flip(frame,1))
-    cv2.imshow("Video da Webcam Invertido", frame_flip)
+    cv2.imshow("Reconhecendo rosto...", frame_flip)
 
     if cv2.waitKey(1000) == 27: ##pressiona esc para sair
         break

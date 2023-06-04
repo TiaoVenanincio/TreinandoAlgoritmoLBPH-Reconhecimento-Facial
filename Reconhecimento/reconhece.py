@@ -36,7 +36,7 @@ def reconhecimento(codigo):
             rosto = 1 #afirma que um rosto foi reconhecido nesse frame
 
         if (rosto == 1) and (limite % 3 == 0):
-        #se reconhecer rosto, faz o reconhecimento a cada 3 frames
+        #se detecta um rosto, faz o reconhecimento a cada 3 frames
             previsao = lbph_face_classifier.predict(imagem_np)
             rotulo, confiabilidade = previsao
 
@@ -51,8 +51,9 @@ def reconhecimento(codigo):
                 output = 'Desconhecido' + '   ' + str(confiabilidade)
                 print(output)
 
+        #O uso do cv2.flip é opcional  
         frame_flip = (cv2.flip(frame,1))
-        cv2.imshow("Video da Webcam Invertido", frame_flip)
+        cv2.imshow("Reconhecendo rosto...", frame_flip)
 
         if cv2.waitKey(5) == 27: #pressiona esc para sair
             break

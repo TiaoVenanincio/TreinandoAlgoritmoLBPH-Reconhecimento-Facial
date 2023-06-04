@@ -45,7 +45,7 @@ def tiraFoto(codigo):
         cv2.putText(frame_flip,"REGISTRANDO IMAGENS",(10,25),cv2.QT_FONT_NORMAL,1,255)
         numero_foto = "FOTO " + str(qtd_foto+1)
         cv2.putText(frame_flip,numero_foto,(10,65),cv2.QT_FONT_NORMAL,1,255)
-        cv2.imshow("Video da Webcam Invertido", frame_flip)
+        cv2.imshow("Registrando imagens para treinamento...", frame_flip)
 
         if cv2.waitKey(5) == 27: # pressiona esc para sair
             break
